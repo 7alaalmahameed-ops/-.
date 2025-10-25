@@ -1,0 +1,117 @@
+/* إعادة تعيين بعض الإعدادات الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* تنسيق الجسم */
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9f9;
+    color: #333;
+    text-align: center;
+    line-height: 1.6;
+    padding: 20px;
+  }
+  
+  /* تنسيق عنوان الصفحة */
+  .header {
+    background: linear-gradient(135deg, #156134, #198754);
+    color: #fff;
+    padding: 25px;
+    font-size: 2rem;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+  }
+  
+  /* تنسيق فقرة المقدمة */
+  .intro {
+    font-size: 1.125rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    text-align: justify;
+  }
+  
+  /* تنسيق الخط الفاصل */
+  .divider {
+    width: 60%;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid #156134;
+  }
+  
+  /* تنسيق جدول العروض */
+  .offers-table {
+    width: 90%;
+    max-width: 800px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .offers-table th,
+  .offers-table td {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+  }
+  
+  /* تنسيق رأس الجدول */
+  .table-header {
+    background-color: #125a24;
+    color: #fff;
+    font-size: 1.125rem;
+  }
+  
+  /* تأثير التحويم على صفوف الجدول (ما عدا الرأس) */
+  .offers-table tr:not(:first-child):hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* تنسيق زر الرجوع إلى الصفحة الرئيسية */
+  .home-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background-color: #125a24;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  
+  .home-button:hover {
+    background-color: #0d5227;
+    transform: translateY(-3px);
+  }
+  
+  /* استجابة التصميم للشاشات الصغيرة */
+  @media (max-width: 600px) {
+    .header {
+      font-size: 1.75rem;
+      padding: 20px;
+    }
+    
+    .intro {
+      font-size: 1rem;
+    }
+    
+    .offers-table th,
+    .offers-table td {
+      padding: 10px;
+    }
+    
+    .home-button {
+      font-size: 1rem;
+      padding: 12px 20px;
+    }
+  }
